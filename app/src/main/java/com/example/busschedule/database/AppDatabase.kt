@@ -1,3 +1,4 @@
+/*Elion Hajrizi*/
 package com.example.busschedule.database
 
 import android.content.Context
@@ -22,7 +23,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "app_database"
                 )
-                    .createFromAsset("database/bus_schedule.db")
+                    .createFromAsset("com/example/busschedule/database/bus_schedule.db")
                     .build()
                 INSTANCE = instance
 
